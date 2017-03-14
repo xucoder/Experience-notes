@@ -33,3 +33,25 @@ $ git push -u origin master
 
 $ git branch -D newbranch
 如果想保留分支只是想删除已经合并的部分只要把大写的D改成小写的d就行了。
+
+
+1.display:inline-block 将元素设置为行内块元素 既是块元素可以设置宽和高又不独占一行。ps：因为内联元素不能设置宽和高。
+2.内联元素开启浮动 脱离文档流 就变成块元素
+
+3.opacity:0-1 设置透明度 ie8以下不支持
+ie8以下要设置 filter:alpha(opacity=50)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
