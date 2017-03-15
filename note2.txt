@@ -42,6 +42,8 @@ $ git branch -D newbranch
 ie8以下要设置 filter:alpha(opacity=50)
 
 4.JSONLint json在线解析工具 jsonlint.com
+5.sublime 中自动提示的插件提示出来都是有问题的，原生的js的innerHTML没提示缺
+提示出来jq的html()方法
 
 
 
