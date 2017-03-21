@@ -44,7 +44,13 @@ ie8以下要设置 filter:alpha(opacity=50)
 4.JSONLint json在线解析工具 jsonlint.com
 5.sublime 中自动提示的插件提示出来都是有问题的，原生的js的innerHTML没提示缺
 提示出来jq的html()方法
-
+6.getElementById 不能直接在后面.value 获取值
+例：var numb=document.getElementById("number").value;
+	alert(numb);
+弹出框中无内容，且numb是undefind；
+正确写法：var numb=document.getElementById("number");
+		alert(numb.value);
+	或者 再定义一个变量来接收numb.value的值也可以。
 
 
 
