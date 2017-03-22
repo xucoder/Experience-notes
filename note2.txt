@@ -44,13 +44,39 @@ ie8以下要设置 filter:alpha(opacity=50)
 4.JSONLint json在线解析工具 jsonlint.com
 5.sublime 中自动提示的插件提示出来都是有问题的，原生的js的innerHTML没提示缺
 提示出来jq的html()方法
-6.getElementById 不能直接在后面.value 获取值
-例：var numb=document.getElementById("number").value;
-	alert(numb);
-弹出框中无内容，且numb是undefind；
-正确写法：var numb=document.getElementById("number");
-		alert(numb.value);
-	或者 再定义一个变量来接收numb.value的值也可以。
+6.字符串是不可改变的，如：
+var s="test";
+s[0]='X';
+alert(s);//s 仍然为test 并不会变成Xest
+那些调用字符串的方法 只是返回一个新的字符串并不会改变他本身。
+7.数组常用的方法：
+push：末尾添加元素
+pop：末尾删除元素
+unshift：头部添加元素
+shift：头部删除元素
+join():把数组中的元素以自定的字符串连接
+eg：var arr=['a','b','c',1,2]
+    arr.join('-');//'a-b-c-1-2'
+concat()：合并数组
+slice():数组截取方法
+eg：arr.slice(0,3);从索引0开始截取3，但不包括3
+    arr.slice(3);从索引3开始到结束。
+splice：指定数组中元素开始位置，删除个数，添加的元素
+eg：arr.splice(2,3,'xiang') 从索引2开始 删除3个元素 添加元素‘xiang’
+reverse():反转数组内元素
+sort():数组排序
+indexof():返回对应的元素位置
+substring():截取字符串
+eg：var s='hello,world'
+s.substring(0,5);从索引0开始到5，但不包括5
+s.substring(7);从索引7开始到结束。
+
+
+
+
+
+
+
 
 
 
