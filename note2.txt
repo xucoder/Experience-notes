@@ -61,19 +61,22 @@ s.substring(7);从索引7开始到结束。
 
 8.jq可分为css事件 dom操作 事件 动画 四个部分
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+9.jquery和dom对象
+  DOM对象，就是我们用传统的方法JavaScript获得的对象；
+  JQuery对象，即是用JQuery类库的选择器获得的对象；
+例如：var domObj=document.getElement.ById("id");//DOM对象
+      var $obj=$("#id");//JQuery对象
+JQuery对象是通过JQuery包装DOM对象后产生的对象，它是JQuery独有的。如果一个对象是JQuery对象，那么就可以使用JQuery里面的方法，例：
+      $("#foo").html();//获取id为foo的元素内的html代码，html()是JQuery特有的方法，上面的代码等同于：
+      document.getElementById("foo").innerHTML;
+注意：在JQuery对象中无法使用DOM对象的任何方法。
+      DOM对象也不能使用任何JQuery对象方法。
+JQuery和DOM对象的转换：
+jquery提供了两种方法将一个jQuery对象转换为dom对象，即[index]和get(index),
+jquery对象就是一个数组对象！
+      var $cs=$("#cs");//jquery对象
+      var cs=$cs[0];//dom对象 或者写成
+      var cs=$cs.get(0);//dom对象
+dom对象转换为jQuery对象为：
+      var sd=documemt.getElementById("sd");//dom 对象
+      var $sd=$(sd);//jquery对象
