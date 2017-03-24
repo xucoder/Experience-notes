@@ -80,3 +80,5 @@ jquery对象就是一个数组对象！
 dom对象转换为jQuery对象为：
       var sd=documemt.getElementById("sd");//dom 对象
       var $sd=$(sd);//jquery对象
+
+10.jquery 源码解析
