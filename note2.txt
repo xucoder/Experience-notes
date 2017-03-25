@@ -82,3 +82,5 @@ dom对象转换为jQuery对象为：
       var $sd=$(sd);//jquery对象
 
 10.jquery 源码解析
+
+11.表格中某一列按顺序排序 http://www.cnblogs.com/hjy920124/p/5838087.html
