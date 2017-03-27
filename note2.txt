@@ -64,7 +64,7 @@ s.substring(7);从索引7开始到结束。
 9.jquery和dom对象
   DOM对象，就是我们用传统的方法JavaScript获得的对象；
   JQuery对象，即是用JQuery类库的选择器获得的对象；
-例如：var domObj=document.getElement.ById("id");//DOM对象
+例如：var domObj=document.getElementById("id");//DOM对象
       var $obj=$("#id");//JQuery对象
 JQuery对象是通过JQuery包装DOM对象后产生的对象，它是JQuery独有的。如果一个对象是JQuery对象，那么就可以使用JQuery里面的方法，例：
       $("#foo").html();//获取id为foo的元素内的html代码，html()是JQuery特有的方法，上面的代码等同于：
