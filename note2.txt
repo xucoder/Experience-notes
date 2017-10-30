@@ -84,3 +84,5 @@ dom对象转换为jQuery对象为：
 10.jquery 源码解析
 
 11.表格中某一列按顺序排序 http://www.cnblogs.com/hjy920124/p/5838087.html
+
+12.css中margin：0 auto；设置元素水平居中 主要是针对div或者是类似块级元素才生效，p,input等内联元素 设置会无效 如果需要生效 可以使用text-align 或者是display:block;width:300px; 先设置成块级元素 在设置宽度才可以居中。
